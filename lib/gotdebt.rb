@@ -12,6 +12,7 @@ end
 module Gotdebt
   ROOT = Pathname(Pathname(File.dirname(__FILE__) + "/..").expand_path) unless Gotdebt.const_defined?("ROOT")
   LIBDIR = ROOT/:lib unless Gotdebt.const_defined?("LIBDIR")
+  MIGRATION_ROOT = ROOT/:db/:migrate
   L = LIBDIR/:gotdebt unless Gotdebt.const_defined?("L")
   M = ROOT/:model unless Gotdebt.const_defined?("M")
   C = ROOT/:controller unless Gotdebt.const_defined?("C")
