@@ -3,15 +3,19 @@ GEM
   specs:
     innate (2013.02.21)
       rack (~> 1.5.2)
+    pg (0.16.0)
     rack (1.5.2)
     rake (10.1.0)
     ramaze (2012.12.08)
       innate (>= 2012.12)
       rake
+    sequel (4.2.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  pg
   rake
   ramaze (>= 2.0.0)
+  sequel

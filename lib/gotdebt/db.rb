@@ -1,7 +1,7 @@
 require "sequel"
 require "logger"
 
-module FXC
+module Gotdebt
   @db ||= nil
 
   def self.db
@@ -37,10 +37,10 @@ module FXC
     end
   end
 
-  def self.setup_db(root = FXC::ROOT, default_app = 'fxc')
+  def self.setup_db(root = Gotdebt::ROOT, default_app = 'gotdebt')
     return @db if @db
 
-    app_db  = FXC.options.db  || default_app
+    app_db  = Gotdebt.options.db  || default_app
     app_env = ENV["APP_ENV"] || "development"
     root_pgpass = root/".pgpass"
     home_pgpass = Pathname('~/.pgpass').expand_path
