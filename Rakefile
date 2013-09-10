@@ -71,7 +71,6 @@ MESSAGE
 }
 
 Dir['tasks/*.rake'].each{|f| import(f) }
-Dir['task/*.rake'].each{|f| import(f) }
 
 task :default => [:bacon]
 
