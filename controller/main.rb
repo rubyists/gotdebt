@@ -10,6 +10,7 @@
 # this will force the controller to be mounted on: /otherurl.
 module Gotdebt
   class MainController < Controller
+    map :/
     # the index action is called automatically when no other action is specified
     def index
       @title = 'Got Debt?'
@@ -49,4 +50,10 @@ module Gotdebt
       end
     end
   end
+
+  def logout
+    flash[:message] = "Logged out"
+    user_logout
+  end
+
 end
