@@ -181,3 +181,7 @@ header, footer, section, aside, nav, article { display: block; }
 	font-style: normal;
 	font-weight: bold; 
 }
+.TextWrapRight {
+  margin: 5px;
+  float: left;
+}
