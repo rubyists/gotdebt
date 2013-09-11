@@ -6,12 +6,13 @@ class Controller < Ramaze::Controller
   layout :default
   helper :xhtml, :user
   engine :etanni
+  trait :user_model => Gotdebt::User
 
 private
 
  def login_first
    return if logged_in?
-   redirect MainController.r(:login)
+   redirect "/login"
  end
 
 end

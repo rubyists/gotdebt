@@ -185,3 +185,24 @@ header, footer, section, aside, nav, article { display: block; }
   margin: 5px;
   float: left;
 }
+fieldset {
+  border: 1px solid blue;
+  padding: 1em;
+  width: 50%;
+  font:100%/1 sans-serif;
+  }
+label {
+  float:left;
+  width:25%;
+  margin-right:0.5em;
+  padding-top:0.2em;
+  text-align:right;
+  font-weight:bold;
+  }
+.label {
+  width:15%;
+  margin-left: 25%;
+  margin-right:0.5em;
+  padding-top:0.2em;
+  font-weight:bold;
+  }
